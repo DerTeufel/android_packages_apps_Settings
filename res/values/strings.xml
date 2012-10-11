@@ -4892,4 +4892,7 @@
     <string name="development_tools_title">Launch Tools</string>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
+
+    <string name="title_expanded_volume">Volume slider</string>
+
 </resources>
