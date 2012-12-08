@@ -16,6 +16,17 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/development_settings_title">
+
+    <PreferenceScreen
+            android:key="development_tools"
+            android:title="@string/development_tools_title"
+            android:persistent="false" >
+        <intent
+                android:action="android.settings.development.LAUNCH_TOOLS"
+                android:targetPackage="com.android.development"
+                android:targetClass="com.android.development.Development" />
+    </PreferenceScreen>
+
     <com.android.settings.BugreportPreference
             android:key="bugreport"
             android:title="@*android:string/bugreport_title"
@@ -63,6 +74,12 @@
             android:key="enable_adb"
             android:title="@string/enable_adb"
             android:summary="@string/enable_adb_summary"/>
+
+        <CheckBoxPreference
+            android:key="adb_notify"
+            android:title="@string/adb_notify"
+            android:summary="@string/adb_notify_summary"
+            android:dependency="enable_adb"/>
 
         <com.android.settings.HostnamePreference
             android:key="device_hostname"
@@ -240,6 +257,11 @@
             android:title="@string/show_all_anrs"
             android:summary="@string/show_all_anrs_summary"/>
 
-     </PreferenceCategory>
+        <CheckBoxPreference
+            android:key="kill_app_longpress_back"
+            android:title="@string/kill_app_longpress_back"
+            android:summary="@string/kill_app_longpress_back_summary"/>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

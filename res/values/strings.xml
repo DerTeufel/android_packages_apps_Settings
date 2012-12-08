@@ -4830,6 +4830,10 @@
     <string name="pref_flash_mode_title">Flash mode</string>
     <string name="expanded_haptic_feedback_title">Haptic feedback</string>
 
+    <!-- Kill app long-press back -->
+    <string name="kill_app_longpress_back">Kill app back button</string>
+    <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back key</string>
+
     <!-- Change Log strings -->
     <string name="changelog_title">View changelog</string>
     <string name="changelog_dialog">Changelog</string>
@@ -4845,6 +4849,7 @@
     <string name="power_menu_expanded_desktop">Expanded desktop</string>
     <string name="power_menu_profiles_title">Profile switcher</string>
     <string name="power_menu_airplane_title">Airplane mode</string>
+    <string name="power_menu_user_title">User switcher</string>
     <string name="power_menu_silent_title">Sound panel</string>
 
     <!-- CM Updater -->
@@ -4878,6 +4883,13 @@
     <string name="display_category_wakeup_options_title">Wakeup options</string>
     <string name="pref_volume_wake_title">Volume rocker wake</string>
     <string name="pref_volume_wake_summary">Pressing the volume rocker up/down will wake the device</string>
+
+    <!-- Setting checkbox summary for displaying USB debugging notification -->
+    <string name="adb_notify">USB debugging notify</string>
+    <string name="adb_notify_summary">Display a notification when USB debugging is connected</string>
+
+    <!-- Launches Dev Tools -->
+    <string name="development_tools_title">Launch Tools</string>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
 </resources>
